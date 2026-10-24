@@ -5,7 +5,13 @@ type SectionProps = {
   title?: string;
 };
 
-function Sections({ children, title = "default value" }: SectionProps) {
+function Sections({
+  children,
+  title = "default value",
+}: {
+  children: ReactNode;
+  title?: string;
+}) {
   return (
     <>
       <div>{title}</div>
